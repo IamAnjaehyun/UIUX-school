@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #header{
+            width:800px; margin: 0 auto ;
+            background: red;
+        }
+        #warp{
+            width: 800px;margin:0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px; float: left;
+            background:blue;
+        }
+        #content {
+            width:600px; float:left;
+            background:greenyellow;
+        }/* 클래스는 스타일 속성을 줄 때. + 클래스명하고 스타일 속성을 줌 */
+        .item{
+            color:red;
+        }
+        .header{
+            background-color: aqua;
+        }
+        input[type="text"]{background-color: red;} /*이런형식으로 속성 부여가능*/
+        input[type="password"]{background-color: blue;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+    <h1 class="item header">중간고사는 중간보고서로 대체 30점</h1>
+    <!--클래스명을 두개를 줄 수 있다. 속성을 여러개 부여할 수 있게 함-->
+    <ul>
+        <li class="select">사과</li>
+        <li>바나나</li>
+        <li class="select">배</li>
+        <li>감</li>
+
+    </ul>
+    <div id="header">
+        <h1>큰제목1(header 태그)</h1>
+    </div>
+    <div id="warp">
+        <div id="aside">
+            <h1>두번째제목(aside 태그)</h1>
+        </div>
+        <div id="content">
+            <h1>세번째제목(content 태그)</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 동영상 재생 브라우저가 다양하니까 동여상을 지원하지 않는 사용자를 위해서
+         다양한 포맷영상 업로드 포맷의 형식 뭐다해서 형식 지정해서 업로드-->
+         <!-- 소스언어 korean label="Korean" 동영상재생 브라우저가 다양하니까 동영상을 지원 -->
+    <video controls> 
+        <source src="media/Painting.mp4" type="video/mp4">
+        <source src="media/Painting.webm" type="video/webm">
+        <track src="media/Painting.vtt" srclang="ko" label="korean" default>
+        이 영상을 보기 위해서는 html5를 지원하는 브라우저가 필요합니다.
+    </video>
+    
+</body>
+</html>

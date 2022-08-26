@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            float: left; /*왼쪽 오른쪽에 위치하게*/
+            width: 100px;
+            background-color: #ffd800;
+            margin-right: 10px; /*왼쪽에 다음 박스 오른쪽 배치 바긋와 박스 사이 여백*/            
+            padding: 20px;
+        }
+
+        .box2{
+            /* position: relative; 놓여진 요소를 기준으로 상태적인 위치를 잡는다. */
+            position: relative; /*상대적인 위치를 지정 위에서부터 얼마 위치 왼쪽에서 얼마만큼 떨어진 위치*/
+            left: -50px;
+            top: 30px;
+            width: 300px;
+            background-color: #0097ff;
+            float: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"> 박스1</div>
+    <div class="box2"> 박스2</div>
+    
+
+</body>
+</html>

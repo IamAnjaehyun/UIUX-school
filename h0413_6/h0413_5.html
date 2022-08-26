@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border:1px solid #ccc;
+            width:auto;
+            height: auto;
+            padding:10px;
+        }
+        #container{
+            width: 960px;
+            padding: 20px;
+        }
+        #header ul li { 
+            display: inline;
+        }
+        #header ul li a{
+
+            padding: 5px;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        #contents{
+            text-decoration: underline;
+            padding: 5px;
+
+            border:1px solid skyblue;
+            width: 620px;
+            float:left; /*왼쪽정렬 너비전체차지 안되고*/
+        }
+        #sidebar{
+            border:1px solid skyblue;
+            padding: 5px;
+
+            width: 220px;
+            float:right; /*오른쪽에 배치*/
+            background:#ccc;
+        }
+        #footer{
+            text-decoration: underline;
+            padding: 5px;
+            /* 정렬을 무효화하겠다. 왼쪽 오른쪽 정렬이든 다 정렬 무효화*/
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+    <ul>
+        <li><a href="#">애완동물1 </a></li>
+        <li><a href="#">애완동물2 </a></li>
+        <li><a href="#">애완동물3 </a></li>
+    <ul>
+-->
+
+    <div id="header">
+        <ul>
+            <li><a>애완동물 1  </a></li>
+            <li><a>애완동물 2  </a></li>
+            <li><a>애완동물 3  </a></li>
+        </ul>
+
+    <div id="sidebar"><h2>사이드바<br>천안시맛집소개</h2>
+        <ul>
+        <li>동남구</li>            
+        <li>서북구</li>
+        </ul>
+    </div>
+    <div id="contents"><h2>본문<br>천안시 홍보글</h2>
+        <p><br><br></p>
+        </div>
+    <div id="footer"><h2>주소</h2>
+        <p>천안시 동남구 안서동 백석대학교</p>
+    </div>
+</div>
+</body>
+</html>

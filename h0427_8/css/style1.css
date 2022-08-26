@@ -1,0 +1,123 @@
+/* @charset "utf-8; */
+body {
+    font: 14px 맑은 고딕;
+}
+
+.container {
+    position: absolute;
+    width: 950px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+}
+
+header {
+    position: relative;
+    /*absolute로 h1 h2 처리*/
+    height: 280px;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    /*왼쪽 상단에 배치함. 반복배치 안함*/
+    background-position: left top;
+}
+
+header h1 {
+    position: absolute;
+    /*절대좌표*/
+    right: 20px;
+    bottom: 70px;
+    /*오른쪽하단에 거의 배치됨 70px*/
+    font-size: 3em;
+    /*글자 그림자 x좌표 y좌표 이동 흐림정도 글자색깔 아이보리대문자 M자를 기준으로 1배 2배 3배... */
+    color: #ffc;
+    text-shadow: 1px 2px 2px #000;
+}
+
+header h2 {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    /*30px 띄움*/
+    font-size: 2em;
+    color: #ff0;
+    text-shadow: 0px 1px 1px #000;
+}
+
+/* 메뉴부분 */
+.navi {
+    position: relative;
+    background-color: #271717;
+    margin-top: -15px;
+    width: 960px;
+    height: 60px;
+}
+
+.navi ul {
+    list-style: none;
+    /*한줄단위로 표기되게 리스트나열안함*/
+    height: 40px;
+    padding-top: 10px;
+    /*상단여백 내부여백 하단여백 5px*/
+    padding-bottom: 5px;
+}
+
+/* li을 한줄로 표기 처리가 있어야함 */
+.navi ul li {
+    display: inline-block;
+    /*한줄로 배치하는 항목들*/
+    font-size: 15px;
+}
+
+/*focus는 해당 위치에 커서를 가져다 대면 화살표 표시 나옴. active 태그는 a태그를 누른 다음 속성을 변경하는 것. a태그는 사이트나 다른문서 방문 방문 후 처리 클릭하고 난 다음 */
+.navi a,
+.navi a:visited {
+    padding: 10px 5px 5px 35px;
+    display: block;
+    /* text-shadow: 0px 2px 2px #000; */
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+}
+
+/* 위에 놓으면, active는 */
+.navi a:hover,
+.navi a:active,
+.navi a:focus {
+    color: #fc0;
+}
+
+.sidebar {
+    float: right;
+    /*배치 오른쪽배치*/
+    width: 200px;
+    height: 550px;
+    background-color: #dfd;
+    padding: 20px 0px 10px 10px;
+}
+
+.sidebar img {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.content {
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 720px;
+    float: left;
+}
+
+header,
+section,
+footer,
+aside,
+article,
+figure {
+    display: block;
+}
+
+.banner {
+    margin: 0px 10px 15px 10px;
+    padding: 0px;
+}

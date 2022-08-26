@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul{
+            list-style-type: none; /*리스트 스타일 타입을 사용하지 않겠다. none*/
+        }/*리스트의 아이템을 옆으로 정렬*/
+        nav ul li{
+            margin-right: 20px;
+            display: inline; /*리스트 a항목이 한줄을 차지하지 않음 여러개 항목이 한줄로 구성된다*/
+            /*상단 바 장식*/
+            border-top: 3px solid #222;
+            padding: 10px 15px; /*2개 지정시 위하고 아래 (10px) 좌우는(15px)*/
+        } /*ㅇ앵커태그의 속성이 글자 천안시 역사 명소 맛집... 글자색을 검정, */
+        nav ul li a{
+            color: black; /*글자색 검정 밑줄 그어져있음. 밑줄삭제*/
+            text-decoration: none;
+        }
+        /* 커서가 해당 li를 클릭 누르고 있으면 (hover)하고있으면 배경바뀌기 */
+        nav ul li:hover{
+            background-color: #ff0000;
+        }
+
+        .box1{
+            border-width: 10px;
+            border-style: outset;
+        }
+        /* .box2{
+            width: 300px;
+            border-style: outset;
+        } */
+        h1{
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ccc; /*실선인데 아래방향에 실선이들어감*/
+        }
+        p{ /*p태그의 속성 상하좌우*/
+            padding:10px;
+            border: 3px dotted #222;
+
+        }
+        .s1{
+            margin-right: 50px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body><!--상단에 하이퍼링크된 문단이동할 때 사용-->
+    <div class="s1" style="background-color: green;"></div> <!--사각형의 박스 녹색, 오렌지, 파랑 스타일을 body에서도 가능하다-->
+    <div class="s1" style="background-color: orange;"></div>
+    <div class="s1" style="background-color: blue;"></div>
+    
+    <h1>박스모델</h1>
+    <p>글자 모델은 실제 콘텐츠 영역 사이의 여백인 padding 안쪽여백,<br> 박스테두리 border-style
+        그리고 여러 박스 모델 간의 여백 margin으로 구성되어있다.
+    </p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#">천안시 역사</a></li>
+            <li><a href="#">천안 명소</a></li>
+            <li><a href="#">천안 맛집</a></li>
+            <li><a href="#">천안 축제</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
