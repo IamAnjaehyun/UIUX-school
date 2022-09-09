@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20172407안재현</title>
+</head>
+
+
+<body>
+    <canvas id=myCanvas width=300 height=300 style="background-color:pink"></canvas>
+
+    <script>
+
+        var ctx= myCanvas.getContext("2d");
+    
+        function Point(x,y){
+            this.x=x;
+            this.y=y;
+        }
+    
+        function Rectangle(point, width, height, colour){
+            this.point=point;
+            this.width=width;
+            this.height=height;
+            this.colour=colour;
+        }
+    
+        Rectangle.prototype.draw=function(mode){
+            ctx.beginPath();
+            
+            if(mode=="stroke"){
+                ctx.strokeStyle=this.colour;
+                ctx.strokeRect(this.point.x,this.point.y,this.width,this.height)
+                ctx.stroke();
+            }
+            else if(mode="fill"){
+                ctx.fillStyle=this.colour;
+                ctx.fillRect(this.point.x,this.point.y,this.width,this.height)
+                ctx.fill()
+            } 
+        }
+    
+        var p1=new Point(50,50);
+        var p2=new Point(200,50);
+        var p3=new Point(200,200);
+        var rect1 = new Rectangle(p1, 50, 50, "green")    
+        var rect2 = new Rectangle(p2, 50, 80, "red")    
+        var rect3 = new Rectangle(p3, 70, 40, "blue")   
+        
+        rect1.draw("fill");
+        rect2.draw("stroke");
+        rect3.draw("stroke");
+    </script>
+</body>
+</html>
